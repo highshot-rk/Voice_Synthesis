@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "SOS_DB": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "sos",
+    "username": "root",
+    "password": "",
+    "name": "SOS_DB",
+    "connector": "mongodb"
+  }
+}

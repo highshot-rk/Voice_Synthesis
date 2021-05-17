@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/cell_margin"
+    android:layout_marginRight="@dimen/cell_margin"
+    android:layout_marginTop="@dimen/cell_margin"
+    android:layout_marginBottom="@dimen/cell_margin"
+    android:layout_gravity="center"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:id="@+id/layContainer"
+        android:layout_width="140dp"
+        android:layout_height="@dimen/dimen_100"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_background">
+        </ImageView>
+        <TextView
+            android:id="@+id/txtVideoName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="Video Tittle"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:textSize="@dimen/dimen_17"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

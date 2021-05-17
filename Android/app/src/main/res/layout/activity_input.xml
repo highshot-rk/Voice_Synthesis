@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.InputActivity">
+    <include
+        layout="@layout/app_bar_sub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginTop="@dimen/dimen_60"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/dimen_25"
+        android:text="@string/str_input_letters"
+        android:gravity="center"
+        android:textColor="@color/accent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/dimen_20">
+        <EditText
+            android:visibility="visible"
+            android:id="@+id/edtInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_edit_radius"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:hint="@string/str_input">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="@string/dialog_action_ok"
+        android:textSize="@dimen/dimen_20"
+        android:textColor="@color/white"
+        android:background="@drawable/item_button_radius"
+        android:layout_marginBottom="@dimen/dimen_30">
+    </Button>
+
+</RelativeLayout>

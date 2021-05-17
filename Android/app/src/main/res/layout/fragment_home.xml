@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/dimen_20"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/txtNickName"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_name"
+        android:textColor="@color/colorRegisterText"
+        android:textSize="25dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dimen_30"
+        android:paddingRight="@dimen/dimen_30"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:layout_weight="1">
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_edit_radius"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:hint="@string/str_input">
+        </EditText>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/str_home_content"
+            android:textColor="@color/colorLightPink"
+            android:textSize="25dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_home">
+
+        </ImageView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="160dp"
+        android:layout_height="@dimen/dimen_50"
+        android:text="@string/dialog_action_ok"
+        android:textSize="@dimen/dimen_20"
+        android:textColor="@color/white"
+        android:background="@drawable/item_button_gradient_red"
+        android:layout_marginBottom="@dimen/dimen_30">
+    </Button>
+    <TextView
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_home_remark"
+        android:textColor="@color/colorRegisterText"
+        android:textSize="15dp">
+    </TextView>
+
+</LinearLayout>

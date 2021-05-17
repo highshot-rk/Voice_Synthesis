@@ -1,0 +1,18 @@
+#tabs_id.active{
+    background-color: aquamarine;
+}
+#tabs_id.position-fixed{
+    position: relative !important;
+}
+#member .section{
+    padding-bottom: 10px;
+}
+#resort .section{
+    padding-bottom: 10px;
+}
+#cryhistory .section{
+    padding-bottom: 10px;
+}
+#billing .section{
+    padding-bottom: 10px;
+}
